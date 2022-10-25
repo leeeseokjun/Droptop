@@ -1,0 +1,648 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  width: 100%;
+  height: 116px;
+  background-color: #1a2680;
+  position: relative;
+}
+.header-wrap {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-wrap img {
+  width: 190px;
+  height: 80px;
+}
+.header-wrap .login {
+  width: 113px;
+  height: 43px;
+  background-color: #1a2680;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  bottom: -43px;
+  right: 64px;
+}
+.header-wrap .login > a {
+  font-family: "GmarketSansMedium";
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  line-height: 43px;
+  color: #fff;
+}
+
+.nav {
+  width: 100%;
+  height: 90px;
+}
+.nav > ul {
+  font-family: "GmarketSansMedium";
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.nav > ul li {
+  flex-basis: 20%;
+  font-size: 19px;
+  text-align: center;
+  padding: 2px;
+}
+.nav > ul li > p {
+  color: #1a2680;
+  cursor: pointer;
+  font-weight: bold;
+}
+.nav > ul li:hover {
+  background-color: #e4e4e4;
+  border-radius: 20px;
+}
+.nav .nav-box {
+  width: 100%;
+  height: 450px;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  position: absolute;
+  display: none;
+  z-index: 9;
+}
+.nav .nav-box .box-wrap {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.nav .nav-box .box-wrap::after {
+  content: "";
+  position: absolute;
+  width: 1300px;
+  height: 1px;
+  background-color: #000;
+}
+.nav .nav-box .box-wrap div {
+  flex-basis: 20%;
+  font-family: "GmarketSansMedium";
+}
+.nav .nav-box .box-wrap div > ul {
+  margin: 20px;
+}
+.nav .nav-box .box-wrap div > ul li {
+  padding: 10px;
+}
+
+.content-swiper {
+  width: 915px;
+  height: 561px;
+  margin-top: 60px;
+  margin-left: 0;
+  display: flex;
+}
+.content-swiper .banner img {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+  width: 900px;
+}
+.content-swiper .swiper-pagination-bullet {
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+}
+.content-swiper .swiper-pagination-bullet-active {
+  cursor: pointer;
+  background-color: #1a2680;
+  width: 15px;
+  height: 15px;
+}
+
+.menu-content {
+  display: flex;
+  gap: 25px;
+  margin-left: 50px;
+  font-family: "GmarketSansMedium";
+  text-align: center;
+  bottom: 190px;
+  left: 50%;
+  position: absolute;
+}
+.menu-content img {
+  width: 190px;
+  height: 190px;
+}
+.menu-content .menu1 > p {
+  font-size: 13.5px;
+  font-weight: bold;
+}
+.menu-content .menu1 span {
+  font-size: 10px;
+  color: #a1a1a1;
+}
+.menu-content .menu2 {
+  display: none;
+}
+.menu-content .menu2 > p {
+  font-size: 13.5px;
+  font-weight: bold;
+}
+.menu-content .menu2 span {
+  font-size: 10px;
+  color: #a1a1a1;
+}
+.menu-content .menu3 {
+  display: none;
+}
+.menu-content .menu3 > p {
+  font-size: 13.5px;
+  font-weight: bold;
+}
+.menu-content .menu3 span {
+  font-size: 10px;
+  color: #a1a1a1;
+}
+
+.txt {
+  margin-top: 150px;
+}
+.txt > p {
+  font-size: 120px;
+  font-family: "GmarketSansMedium";
+  color: #1a2680;
+  font-weight: bold;
+  position: absolute;
+  left: 12.5%;
+  z-index: 9;
+}
+
+.txt2 {
+  margin-top: 150px;
+}
+.txt2 > p {
+  font-size: 120px;
+  font-family: "GmarketSansMedium";
+  color: #1a2680;
+  font-weight: bold;
+  position: absolute;
+  right: 12.5%;
+  z-index: 9;
+}
+
+.food {
+  width: 100%;
+  height: 410px;
+}
+.food .food-content {
+  width: 1080px;
+  height: 100%;
+  top: 75px;
+  left: 90px;
+}
+.food .food-content .food-img {
+  width: 160px;
+  height: 320px;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+.food .food-content .food-img.on {
+  width: 320px !important;
+  height: 320px !important;
+}
+.food .food-content .food-img.on img {
+  width: 320px;
+  height: 320px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.food .food-content .food-img img {
+  width: 160px;
+  height: 160px;
+}
+.food .food-content .food-img .food-txt {
+  font-family: "GmarketSansMedium";
+  position: absolute;
+  top: 15px;
+  left: 320px;
+  width: 400px;
+  height: 120px;
+  background-color: #e1e1e1;
+  border-radius: 0 20px 20px 0;
+  padding: 10px 0 0 10px;
+  z-index: -1;
+  transform: 0.3s;
+  transform: translateX(-410px);
+}
+.food .food-content .food-img .food-txt h2 {
+  color: #ff711b;
+}
+.food .food-content .food-img .food-txt p {
+  color: #656565;
+  margin-bottom: 20px;
+}
+.food .food-content .food-img .food-txt span {
+  font-weight: bold;
+}
+
+.cake {
+  width: 100%;
+  height: 410px;
+}
+.cake .cake-content {
+  width: 1080px;
+  height: 100%;
+  top: 75px;
+  left: -140px;
+}
+.cake .cake-content .cake-img {
+  width: 160px;
+  height: 320px;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+.cake .cake-content .cake-img.on {
+  width: 320px !important;
+  height: 320px !important;
+}
+.cake .cake-content .cake-img.on img {
+  width: 320px;
+  height: 320px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.cake .cake-content .cake-img img {
+  width: 160px;
+  height: 160px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.cake .cake-content .cake-img .cake-txt {
+  font-family: "GmarketSansMedium";
+  position: absolute;
+  top: 15px;
+  right: 320px;
+  width: 400px;
+  height: 120px;
+  text-align: right;
+  background-color: #e1e1e1;
+  border-radius: 20px 0 0 20px;
+  padding: 10px 10px 0 0;
+  z-index: -1;
+  transform: 0.3s;
+  transform: translateX(410px);
+}
+.cake .cake-content .cake-img .cake-txt h2 {
+  color: #1a2680;
+}
+.cake .cake-content .cake-img .cake-txt p {
+  color: #656565;
+  margin-bottom: 20px;
+}
+.cake .cake-content .cake-img .cake-txt span {
+  font-weight: bold;
+}
+
+.store-content {
+  max-width: 1200px;
+  margin-top: 150px;
+}
+.store-content .store-txt {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.store-content .store-txt > p {
+  font-family: "GmarketSansMedium";
+  font-size: 35px;
+  font-weight: bold;
+  color: #1a2680;
+}
+.store-content .store-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.store-content .store-wrap .store-img {
+  margin-top: 100px;
+}
+.store-content .store-wrap .store-img img {
+  width: 200px;
+  cursor: pointer;
+}
+.store-content .store-wrap .store-img img:hover {
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+}
+
+.contact {
+  width: 100%;
+  height: 550px;
+  margin-top: 100px;
+  position: relative;
+}
+.contact .contact-wrap {
+  max-width: 1400px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+}
+.contact .contact-wrap .contact-left {
+  width: 500px;
+  height: 450px;
+  background-color: #fff;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 0 50px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.contact .contact-wrap .contact-left .contact-box {
+  margin-top: 35px;
+  margin-left: 50px;
+}
+.contact .contact-wrap .contact-left .contact-box > h2 {
+  font-family: "GmarketSansMedium";
+  color: #1a2680;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.contact .contact-wrap .contact-left .contact-box h4 {
+  font-family: "GmarketSansMedium";
+  font-weight: bold;
+  color: #ff711b;
+  font-size: 24px;
+}
+.contact .contact-wrap .contact-left .contact-box .contact-txt {
+  margin-top: 40px;
+}
+.contact .contact-wrap .contact-left .contact-box .contact-txt p {
+  font-family: "GmarketSansMedium";
+  color: #1a2680;
+}
+.contact .contact-wrap .contact-left .contact-box .add-contact {
+  margin-top: 80px;
+  text-align: right;
+  margin-right: 30px;
+}
+.contact .contact-wrap .contact-left .contact-box .add-contact a {
+  font-family: "GmarketSansMedium";
+}
+.contact .contact-wrap .contact-right {
+  position: absolute;
+  right: 0;
+}
+.contact .contact-wrap .contact-right .right-txt {
+  position: absolute;
+  top: 60px;
+  left: 95px;
+}
+.contact .contact-wrap .contact-right .right-txt h1 {
+  font-family: "GmarketSansMedium";
+  color: #1a2680;
+  font-size: 34px;
+  font-weight: bolder;
+}
+.contact .contact-wrap .contact-right .right-p {
+  position: absolute;
+  left: 95px;
+  top: 210px;
+}
+.contact .contact-wrap .contact-right .right-p > p {
+  font-family: "GmarketSansMedium";
+  color: #1a2680;
+  font-size: 14px;
+}
+.contact .contact-wrap .contact-right .right-p > p:nth-child(4) {
+  margin-top: 20px;
+}
+.contact .contact-wrap .contact-right .right-img {
+  border-radius: 50px;
+}
+.contact .contact-wrap .contact-right .right-img img {
+  width: 950px;
+  height: 450px;
+  border-radius: 50px 0 0 50px;
+}
+
+.bottom-content {
+  width: 100%;
+}
+.bottom-content .content-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.bottom-content .content-wrap .left-content {
+  width: 425px;
+}
+.bottom-content .content-wrap .left-content .event-mian {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.bottom-content .content-wrap .left-content .event-mian > h1 {
+  font-family: "GmarketSansMedium";
+  color: #1a2680;
+  font-size: 24px;
+}
+.bottom-content .content-wrap .left-content .event-mian > a {
+  position: absolute;
+  right: 0;
+}
+.bottom-content .content-wrap .left-content .event-mian > a > img {
+  width: 15px;
+  height: 15px;
+}
+.bottom-content .content-wrap .left-content .event-txt {
+  margin-top: 10px;
+}
+.bottom-content .content-wrap .left-content .event-txt .txt-box {
+  width: 425px;
+  height: 40px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.bottom-content .content-wrap .left-content .event-txt .txt-box > a {
+  margin-left: 10px;
+  font-family: "GmarketSansMedium";
+  font-size: 16px;
+  text-align: start;
+  line-height: 40px;
+}
+.bottom-content .content-wrap .left-content .event-banner .banner-img > img {
+  display: block;
+  width: 425px;
+  height: 110px;
+  margin: 10px 0;
+}
+.bottom-content .content-wrap .right-content {
+  display: flex;
+}
+.bottom-content .content-wrap .right-content > .store {
+  width: 300px;
+  height: 380px;
+  background-color: #f6f6f6;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.bottom-content .content-wrap .right-content > .store > .title > h1 {
+  font-family: "GmarketSansMedium";
+  color: #1a2680;
+  padding: 20px;
+  font-size: 24px;
+}
+.bottom-content .content-wrap .right-content > .store .store-map {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+.bottom-content .content-wrap .right-content > .store .store-map img {
+  width: 280px;
+  height: 300px;
+}
+.bottom-content .content-wrap .right-content .franchise {
+  font-family: "GmarketSansMedium";
+  width: 300px;
+  height: 380px;
+  background-color: #f6f6f6;
+  margin-left: 40px;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.bottom-content .content-wrap .right-content .franchise > .title > h1 {
+  text-align: left;
+  color: #1a2680;
+  padding: 20px;
+  font-size: 24px;
+}
+.bottom-content .content-wrap .right-content .franchise > p {
+  font-size: 15px;
+}
+.bottom-content .content-wrap .right-content .franchise > p:nth-child(2) {
+  font-weight: bold;
+  padding-top: 20px;
+}
+.bottom-content .content-wrap .right-content .franchise > p:nth-child(3) {
+  padding-bottom: 30px;
+}
+.bottom-content .content-wrap .right-content .franchise > span {
+  color: #1a2680;
+  font-weight: bold;
+}
+.bottom-content .content-wrap .right-content .franchise > span > strong {
+  color: #ff711b;
+}
+.bottom-content .content-wrap .right-content .franchise .concept {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.bottom-content .content-wrap .right-content .franchise .concept .concept-txt > p {
+  color: #1a2680;
+  font-size: 17px;
+}
+.bottom-content .content-wrap .right-content .franchise .concept .concept-txt > p > strong {
+  color: #ff711b;
+}
+.bottom-content .content-wrap .right-content .franchise .concept .concept-txt > span {
+  font-size: 10px;
+}
+.bottom-content .content-wrap .right-content .franchise .advice {
+  width: 230px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #1a2680;
+  border-radius: 50px;
+  margin-top: 40px;
+}
+.bottom-content .content-wrap .right-content .franchise .advice > a {
+  line-height: 45px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #1a2680;
+  margin-top: 20px;
+}
+.footer .footer-wrap {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-wrap .logo {
+  flex-basis: 25%;
+  text-align: center;
+}
+.footer .footer-wrap .logo img {
+  width: 180px;
+}
+.footer .footer-wrap .footer-txt {
+  flex-basis: 75%;
+  font-family: "GmarketSansMedium";
+  padding-left: 30px;
+}
+.footer .footer-wrap .footer-txt > span {
+  color: #fff;
+  font-size: 15px;
+}
+.footer .footer-wrap .footer-txt > p {
+  color: #fff;
+  font-size: 15px;
+}
+.footer .footer-wrap .footer-txt .address {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .header-wrap img {
+    width: 100px;
+    height: 50px;
+  }
+  .header-wrap .login {
+    width: 80px;
+    height: 35px;
+    border-radius: 0 0 10px 10px;
+    bottom: -23px;
+  }
+  .header-wrap .login > a {
+    font-size: 9px;
+  }
+}/*# sourceMappingURL=index.css.map */
